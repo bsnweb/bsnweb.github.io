@@ -1,26 +1,67 @@
+html{
+  background-color: aliceblue;
+}
+.contentUnit{
+  background-color: ghostwhite;
+  border: outset white 2px;
+  width: ;
+}
+.contentUnit:hover{
+  background-color: lightgray;
+}
 #all{
-  background-color: blue;
+  background-color: lavender;
+  border: 1px black solid;
   padding: 10px;
-  width: 80%;
+  width: 80vw;
   margin: auto;
 }
 #nav{
-  background-color: green;
   text-align: center;
 }
 #nav button{
   width: 20%;
   margin: 2px;
+  max-width: 100px;
+  background-color: ghostwhite;
+  border: outset white 2px;
+}
+#nav button:hover{
+  background-color: lightgray;
+  border: outset ghostwhite 2px;
 }
 #content{
   background-color: red;
 }
-
-@media only screen and (max-width: 900px){
+.unitImg{
+  display: inline;
+  width: 100%;
+  margin-left: 5px;
+}
+p{
+  display: inline-block;
+  background-color: green;
+}
+.imgDiv{
+  width: 30%;
+  display: inline-block;
+}
+.pDiv{
+  width: 65%;
+  display: flex;
+  background-color: yellow;
+  float: right;
+  margin-right: 5px;
+}
+.imgpDiv{
+  display: flex;
+}
+@media only screen and (max-width: 944px){
   #all{
-    width: 100%;
+    width: 100vw;
   }
   html, body{
     margin: 0;
+    width: 100vw;
   }
 }
