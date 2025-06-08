@@ -1,10 +1,13 @@
 html{
   background-color: aliceblue;
+  font-family: courier;
 }
 .contentUnit{
   background-color: ghostwhite;
   border: outset white 2px;
-  width: ;
+  padding: 5px;
+  width: 90%;
+  margin: auto;
 }
 .contentUnit:hover{
   background-color: lightgray;
@@ -31,7 +34,8 @@ html{
   border: outset ghostwhite 2px;
 }
 #content{
-  background-color: red;
+  width: 95%;
+  margin: auto
 }
 .unitImg{
   display: inline;
@@ -40,28 +44,43 @@ html{
 }
 p{
   display: inline-block;
-  background-color: green;
 }
 .imgDiv{
   width: 30%;
   display: inline-block;
 }
+hr{
+  width: 95%;
+}
 .pDiv{
   width: 65%;
-  display: flex;
-  background-color: yellow;
+  display: flex; 
   float: right;
   margin-right: 5px;
+  padding: 5px;
+  border-left: black 2px solid;
 }
 .imgpDiv{
-  display: flex;
+  display: inline-block;
+  
 }
-@media only screen and (max-width: 944px){
+@media only screen and (max-width: 900px){
   #all{
-    width: 100vw;
+    width: 98vw;
+  }
+  .imgDiv{
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  .pDiv{
+    margin: auto;
+    float: none;
+    width: 95%;
   }
   html, body{
     margin: 0;
     width: 100vw;
+    padding: 0;
   }
 }
